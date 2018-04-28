@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/chandora/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0-alpha1.aar/b1b5a1fb3c34efbad4f17cff32a15e81/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="15"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/home/chandora/Extra/BlogIt/BlogIt/app/build/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+
+</items>

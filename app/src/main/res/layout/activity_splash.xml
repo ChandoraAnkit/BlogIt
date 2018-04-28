@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#1D6D92"
+    android:layout_height="match_parent"
+    tools:context="chandoras.ankit.awesome.blogit.SplashActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="match_parent"
+        android:src="@drawable/back"
+        android:scaleType="center"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent" />
+</android.widget.RelativeLayout>

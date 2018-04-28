@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:backgroundTintMode="multiply"
+    android:backgroundTint="#424242"
+    android:background="@drawable/login_back"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="chandoras.ankit.awesome.blogit.LoginActivity">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:text="Login or Create a new account"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="68dp"
+        android:layout_above="@+id/login_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/login_email"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_password"
+        android:drawableLeft="@drawable/per_button"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:allowUndo="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+
+
+
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/lock_icon"
+            android:drawablePadding="10dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:hint="Password" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_below="@+id/login_password"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login_sign_in_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:text="Sign In"
+            android:background="@drawable/round_button"
+            android:textColor="@android:color/white"
+            />
+
+
+        <Button
+            android:id="@+id/login_sign_up_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:textColor="@android:color/white"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/or_tv"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:alpha="0.6"
+        android:layout_marginTop="26dp"
+        android:text="Or signIn with"
+        android:layout_below="@+id/linear"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/login_google_btn"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/google_logo_back"
+        android:drawableLeft="@drawable/google_logo"
+        android:drawablePadding="10dp"
+        android:textSize="17sp"
+        android:padding="10dp"
+        android:text="Google"
+        android:textColor="@android:color/white" />
+
+
+    <TextView
+        android:id="@+id/forgot_passwd"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_google_btn"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.6"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Forgot your password" />
+
+</android.widget.RelativeLayout>
